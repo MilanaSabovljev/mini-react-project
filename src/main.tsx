@@ -4,18 +4,20 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProfilePage from "./pages/ProfilePage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+    errorElement: <NotFoundPage />,
   },
   {
     path: "/about",
     element: <AboutPage />,
   },
   {
-    path: "/profile/1",
+    path: "/profile/:id",
     element: <ProfilePage />,
   },
 ]);
