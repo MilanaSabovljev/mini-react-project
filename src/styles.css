@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #f1f1f1;
+  background-color: #948d8d;
   text-align: center;
   margin: 0;
 }
@@ -19,7 +19,12 @@ header h1 {
   margin: 0;
 }
 
-.container {
+.cardsContainer {
+  align-content: flex-end;
+}
+
+.cardsRow {
+  flex-direction: row;
 }
 
 .row {
@@ -42,9 +47,9 @@ header h1 {
   background-color: rgb(243, 179, 90);
   padding: 20px;
   flex-direction: column;
-  height: 100vh;
+  /* max-height: 100vh; */
   text-align: center;
-  align-content: center;
+  /* align-content: center; */
 
   /* position: relative; */
 }
@@ -59,15 +64,18 @@ header h1 {
 }
 
 footer {
-  background-color: #f1f1f1;
+  background-color: #f4a9a9;
   padding: 8px;
   text-align: center;
+
   z-index: 1000;
 }
 
 .navbar {
   display: flex;
   background-color: #333;
+  justify-content: end;
+  flex-direction: row;
 }
 
 .navbar a {
@@ -92,5 +100,20 @@ footer {
     /* position: absolute;
     left: 35%;
     top: 50%; */
+  }
+  .side {
+    display: none;
+  }
+
+  .cardsRow {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: 480px;
   }
 }
