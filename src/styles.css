@@ -67,8 +67,7 @@ footer {
   background-color: #f4a9a9;
   padding: 8px;
   text-align: center;
-
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .navbar {
@@ -103,6 +102,10 @@ footer {
   }
   .side {
     display: none;
+  }
+
+  .main {
+    background-color: #ddd;
   }
 
   .cardsRow {

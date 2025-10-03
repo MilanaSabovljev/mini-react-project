@@ -8,7 +8,8 @@ export default function Header() {
         <h2>dsd</h2>
         <nav className="navbar">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>;<Link to="/contact">Contact</Link>;
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
     </>
